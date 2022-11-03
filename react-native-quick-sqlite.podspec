@@ -26,8 +26,9 @@ Pod::Spec.new do |s|
   s.dependency "React"
   s.dependency "React-Core"
 
+  s.exclude_files = "cpp/sqlite3.c", "cpp/sqlite3.h"
+
   if ENV['QUICK_SQLITE_USE_PHONE_VERSION'] == '1' then
-    s.exclude_files = "cpp/sqlite3.c", "cpp/sqlite3.h"
     s.library = "sqlite3"
   end
   
