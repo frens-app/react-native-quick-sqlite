@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E555C0D2413F4C50049A1A2 /* QuickSQLite.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* QuickSQLite.mm */; };
+		C7E4BE6C2913609600E66663 /* QuickSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E4BE6B2913609600E66663 /* QuickSQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libQuickSQLite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuickSQLite.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5891CC2AC0600A0062D /* QuickSQLite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QuickSQLite.mm; sourceTree = "<group>"; };
+		C7E4BE6B2913609600E66663 /* QuickSQLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSQLite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				C7E4BE6B2913609600E66663 /* QuickSQLite.h */,
 				B3E7B5891CC2AC0600A0062D /* QuickSQLite.mm */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
@@ -56,11 +59,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C7E4BE6A2913605400E66663 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E4BE6C2913609600E66663 /* QuickSQLite.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		58B511DA1A9E6C8500147676 /* QuickSQLite */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "QuickSQLite" */;
 			buildPhases = (
+				C7E4BE6A2913605400E66663 /* Headers */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -214,6 +229,7 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -233,6 +249,7 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
