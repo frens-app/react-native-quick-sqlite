@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* QuickSQLite.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* QuickSQLite.mm */; };
 		C7E4BE6C2913609600E66663 /* QuickSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E4BE6B2913609600E66663 /* QuickSQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7E4BE6D2913623600E66663 /* QuickSQLite.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* QuickSQLite.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -126,7 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E555C0D2413F4C50049A1A2 /* QuickSQLite.mm in Sources */,
+				C7E4BE6D2913623600E66663 /* QuickSQLite.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +180,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -222,6 +223,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USE_HEADERMAP = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -243,6 +245,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Sequel-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -262,6 +265,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Sequel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
