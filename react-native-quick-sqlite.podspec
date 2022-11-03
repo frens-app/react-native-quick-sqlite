@@ -28,7 +28,6 @@ Pod::Spec.new do |s|
 
   if ENV['QUICK_SQLITE_USE_PHONE_VERSION'] == '1' then
     s.exclude_files = "cpp/sqlite3.c", "cpp/sqlite3.h"
-    s.library = "sqlite3"
   end
   
 end
