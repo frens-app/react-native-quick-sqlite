@@ -67,7 +67,8 @@ android {
     targetSdkVersion safeExtGet('targetSdkVersion', 28)
     versionCode 1
     versionName "1.0"
-    
+    hermesEnabled true
+
     externalNativeBuild {
         cmake {
             cppFlags "-O2", "-fexceptions", "-frtti", "-std=c++1y", "-DONANDROID"
