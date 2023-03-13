@@ -39,7 +39,7 @@ def reactNativeArchitectures() {
   return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
 
-def USE_HERMES = rootProject.ext.hermesEnabled
+def USE_HERMES = true
 
 repositories {
   mavenCentral()
@@ -67,7 +67,6 @@ android {
     targetSdkVersion safeExtGet('targetSdkVersion', 28)
     versionCode 1
     versionName "1.0"
-    hermesEnabled true
 
     externalNativeBuild {
         cmake {
